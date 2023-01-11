@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<?php
+	include_once("funcoes.php");
+?>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Nuvem Cebrac - Conrado Saud</title>
+
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="../css/simple-sidebar.css"/>
+        <link rel="stylesheet" href="../css/plataforma.css"/>
+        <link rel="stylesheet" href="../css/enigmas.css"/>
+        <script type="text/javascript" src="../js/bootstrap/jquery.js" ></script>
+
+    </head>
+    <body>
+	
+        <div id="downloads" style="display:none;"></div>
+		
+        <div id="wrapper" class="toggled">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        <i class="fa fa-home"></i> <strong>Início</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-project-diagram"></i> GEW</a>
+                </li>
+                <li>
+                    <a href="aac.html"><i class="fa fa-briefcase"></i> AAC</a>
+                </li>
+				<li>
+                    <a href="lista.html"><i class="fa fa-list"></i> Lista de sites</a>
+                </li>
+                <li>
+                    <a href="../outros.html"><i class="fa fa-ellipsis-v"></i> Outros</a>
+                </li>
+            </ul>
+			
+			<div class="menu-contato">
+				<strong>Conrado Saud</strong>
+				<ul>
+					<li><i class="fa fa-envelope"></i> conradosaud@gmail.com</li>
+					<li><i class="fab fa-whatsapp"></i> (17) 9 9173-3578</li>
+				</ul>
+			</div>
+			
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <a style="margin-top: 25px; margin-left: -5px;" href="#menu-toggle" class="btn btn-dark" id="menu-toggle"><i class="fa fa-exchange-alt"></i></a>
+        
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1 style="text-shadow: 0px 0px 5px red;">04 - Estenografia</h1>
+				
+				<!--
+				<p>
+					<span class="badge" style="background-color:#e5e5e5;"><i class="fa fa-user"></i>  &nbsp; Conrado Saud
+					<span class="badge badge-secondary"><i class="fa fa-envelope"></i> &nbsp; conradosaud@gmail.com</span>
+					<span class="badge badge-secondary"><i class="fab fa-whatsapp"></i> &nbsp; (17) 9 9173-3578</span>
+					</span>
+				</p>
+				-->
+				<br>
+				
+				
+                <div class="input-group mb-3">
+					<input type="text" id="resposta" class="form-control" placeholder="Digite aqui a resposta..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+						<div class="input-group-append">
+							<a class="btn btn-dark" style="color: white;" type="button" onclick="if(document.getElementById('resposta').value=='gorila'){document.getElementById('resposta').value='Você acertou a resposta! Mostre ao professor.'; document.getElementById('resposta').style.backgroundColor='#DFF2BF'; document.getElementById('resposta').style.color='#4F8A10';}else{this.text='Incorreto';this.style.backgroundColor='red'; this.style.color='white';}">Enviar resposta</a>
+						</div>
+				</div>
+                <br>
+                <!--
+				<a class="btn btn-primary" href="redacao.php"><i class="fa fa-plus-circle"></i> Nova redação</a>
+                -->
+				
+                <div class="row">
+                    
+                    <div class="col-12">
+                        <p>
+        					<span class="badge badge-success">Dica</span>
+        					levels
+				        </p>
+                    </div>
+                    
+					<div class="col-12 text-center">
+						<img src="e04.png" class="img-fluid"/>
+					</div>
+					
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+        
+        
+         <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="../js/bootstrap/bootstrap.bundle.min.js" ></script>
+        
+        <script type="text/javascript" src="../js/index.js" ></script>
+		<script type="text/javascript" src="../js/enigmas.js" ></script>
+        
+    </body>
+</html>

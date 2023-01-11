@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<?php
+	include_once("funcoes.php");
+?>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Nuvem Cebrac - Conrado Saud</title>
+
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="css/simple-sidebar.css"/>
+        <link rel="stylesheet" href="css/plataforma.css"/>
+        <link rel="stylesheet" href="css/enigmas.css"/>
+        <script type="text/javascript" src="js/bootstrap/jquery.js" ></script>
+
+    </head>
+    <body>
+	
+        <div id="downloads" style="display:none;"></div>
+		
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1 style="text-shadow: 0px 0px 5px red;">Enigmas <small><i class="fa fa-skull"></i></small></h1>
+				
+				
+                <p>
+                    Teste seus conhecimentos sobre informática para buscar informações e resolver os enigmas abaixo.
+                </p>
+                
+                <!--
+				<a class="btn btn-primary" href="redacao.php"><i class="fa fa-plus-circle"></i> Nova redação</a>
+                -->
+				
+                <div class="row">
+                    <div class="col-lg-4 mt-3" id="card1">
+                        <div class="card" rel="base.html">
+                            <div class="card-body">
+                                <h5 class="card-title">01 - O código</h5>
+								<br>
+								<a class="btn btn-dark btn-block btn-acessar-enigma" href="#" onclick="window.location.href='enigmas/e01.html';">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                        <div class="card" rel="base.html">
+                            <div class="card-body">
+                                <h5 class="card-title">02 - Placa riscada</h5>
+								<br>
+								<a class="btn btn-dark btn-block btn-acessar-enigma" href="#" onclick="if( parseInt(localStorage.getItem('enigma')) >= 2 ){window.location.href='enigmas/e02.html';}else{this.style.backgroundColor='red'}">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                        <div class="card" rel="base.html">
+                            <div class="card-body">
+                                <h5 class="card-title">03 - Imagem..?!</h5>
+                                <br/>
+                                <a class="btn btn-dark btn-block btn-acessar-enigma" href="#" onclick="if( parseInt(localStorage.getItem('enigma')) >= 3 ){window.location.href='enigmas/e03.html';}else{this.style.backgroundColor='red';}">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                        <div class="card" rel="base.html"  style="box-shadow: 0px 0px 1px red;">
+                            <div class="card-body">
+                                <h5 class="card-title">04 - Zoom</h5>
+								<br>
+								<a class="btn btn-dark btn-block btn-acessar-enigma" href="#" onclick="if( parseInt(localStorage.getItem('enigma')) >= 4 ){window.location.href='enigmas/e04.html';}else{this.style.backgroundColor='red';}">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                        <div class="card" rel="base.html"  style="box-shadow: 0px 0px 1px green;">
+                            <div class="card-body">
+                                <h5 class="card-title">05 - Palavra-chave</h5>
+								<br>
+								<a class="btn btn-dark btn-block btn-acessar-enigma" href="#" onclick="if( parseInt(localStorage.getItem('enigma')) >= 5 ){window.location.href='enigmas/e05.html';}else{this.style.backgroundColor='red';}">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                        <div class="card" rel="base.html">
+                            <div class="card-body">
+                                <h5 class="card-title">06 - Dica</h5>
+								<br>
+								<a class="btn btn-dark btn-block btn-acessar-enigma" href="#" onclick="if( parseInt(localStorage.getItem('enigma')) >= 6 ){window.location.href='enigmas/e06.html';}else{this.style.backgroundColor='red';}">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-3">
+                        <div class="card" rel="base.html">
+                            <div class="card-body">
+                                <h5 class="card-title">07 - URL</h5>
+								<br>
+								<a class="btn btn-dark btn-block btn-acessar-enigma" href="#" onclick="if( parseInt(localStorage.getItem('enigma')) >= 6 ){window.location.href='enigmas/e07.html';}else{this.style.backgroundColor='red';}">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+     
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.min.js" ></script>
+    
+    <script type="text/javascript" src="js/index.js" ></script>
+    <script type="text/javascript" src="js/enigmas.js" ></script>
+        
+    </body>
+</html>
